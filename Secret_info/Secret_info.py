@@ -21,12 +21,15 @@ class User:
 
         self.mesaj = MIMEMultipart()
         self.image = MIMEImage(self.sendImage(r"D:\Bilgiler\logo.png"))
+        
         self.mesaj["From"] = "e-posta@gmail.com"
         self.mesaj["To"] = self.email
+        
         url_ip = "https://www.ipsorgu.com/"
         r = requests.get(url=url_ip)
         soup = BeautifulSoup(r.content,"lxml")
         self.ip = soup.find("span",attrs={"class":"ipadresiniz"}).text
+        
         self.send_mail()
 
     def sendImage(self,img:str):
@@ -41,6 +44,7 @@ class User:
     
     def send_mail(self):
         self.connect()
+        
         self.mesaj["Subject"] = "Bilgilerin"
         self.body = f"""
 :------Cihazının Bilgileri------:
@@ -54,10 +58,13 @@ Enlem: {self.json["lat"]} | Boylam: {self.json["lon"]}
 \nHiçbir bilgi Geliştirici ile paylaşılmamıştır.
 \n\nDeveloper by Helmsys™
 """
-        self.body_text = MIMEText(self.body, "plain")  
+        self.body_text = MIMEText(self.body, "plain")
+        
         self.mesaj.attach(self.body_text)
         self.mesaj.attach(self.image)
+        
         self.mail.sendmail( self.mesaj["From"], self.mesaj["To"], self.mesaj.as_string())
+        
         time.sleep(3)
 if __name__ =="__main__":
     print(f""" _______  _______  _______  _______  _______ _________  _________ _        _______  _______ 
