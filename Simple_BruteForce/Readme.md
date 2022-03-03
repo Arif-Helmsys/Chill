@@ -10,4 +10,8 @@ When a 7-8 character long word is written, it may take more than 1 minute. Becau
 
 7-8 karakter uzunluğunda bir kelime yazıldığında 1 dakikadan fazla sürebilir. Çünkü önce bir kelime listesi oluşturur, ardından bu kelime listesinde belirlenen şifrenin kelimelerine göre (yani tüm ihtimallere rağmen) her birinin yerini değiştirir ve yazar. Daha sonra oradan okur ve doğru olanı bulunursa ekrana yazdırır. Bulunmazsa devam eder.
 
-This is just a study as an example. It can be made better and stable by putting it on top of it. / Bu yalnızca örnek olması açısından yapılan bir çalışma. Üstüne konarak daha iyi ve stabil hale getirilebilir.
+This is just a study as an example. It can be made better and stable by putting it on top of it.
+
+/
+
+Bu yalnızca örnek olması açısından yapılan bir çalışma. Üstüne konarak daha iyi ve stabil hale getirilebilir.
