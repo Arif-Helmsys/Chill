@@ -28,10 +28,10 @@ password = list(str(input(f"{GREEN}[+] Please Create Your Password In Here >>> {
 def BruteForce():
     count = 0
     print("Creating Wordlist...")
+    A = time.time()
     with open("wordlist.txt","w",encoding="utf-8") as f:
         for i in itertools.product(password,repeat=len(password)):
             f.write(str(list(i))+"\n")
-    A = time.time()
     with open("wordlist.txt","r",encoding="utf-8") as g:
         readd = g.readlines()
     for _ in readd:
