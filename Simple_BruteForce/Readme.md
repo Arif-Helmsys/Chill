@@ -1,17 +1,20 @@
-```
-python brute.py
-```
+`python brute.py`
+
 ![gif](https://user-images.githubusercontent.com/84701901/158272110-15019e97-015d-448a-8f9b-9773d50a9ce9.gif)
 
-When a 7-8 character long word is written, it may take more than 1 minute. Because first, it creates a wordlist, then changes the location of each of them according to the words of the password determined in this wordlist (that is, despite all the possibilities) and writes it. Afterwards, it reads from there and prints it to the screen if the correct one is found. If not found, it continues. 
+girilen parolanın karmaşıklığı ve uzunluğu ne kadar artarsa keyword listesinin boyutu ve oluşturulma süresi o kadar artar.
 
-/ 
-
-7-8 karakter uzunluğunda bir kelime yazıldığında 1 dakikadan fazla sürebilir. Çünkü önce bir kelime listesi oluşturur, ardından bu kelime listesinde belirlenen şifrenin kelimelerine göre (yani tüm ihtimallere rağmen) her birinin yerini değiştirir ve yazar. Daha sonra oradan okur ve doğru olanı bulunursa ekrana yazdırır. Bulunmazsa devam eder.
+  • _`brute.py`'in bulunduğu konuma `wordlist.txt` adında metin belgesi oluşturulur._
 
 
-This is just a study as an example. It can be made better and stable by putting it on top of it.
+  •  _Wordlist'te girilen parola ile ilgili olabilecek maksimum kombinasyonlar bulunur._
 
-/
 
-Bu yalnızca örnek olması açısından yapılan bir çalışma. Üstüne konarak daha iyi ve stabil hale getirilebilir.
+  • _For döngüsü ile bu metin belgesinde dolaşılır._
+  
+ 
+  • _Oluşturulan parola ile metin belgesindeki eşlendiği vakit parola bulunmuş olur._
+  
+
+
+Bu yalnızca **_örnek_** olması açısından yapılan bir çalışma. Üstüne konarak daha iyi ve stabil hale getirilebilir. Örneğin bir **_while_** döngüsü ile metin belgesi oluşturulmadan girilen parola denk gelinceye kadar döngüde kalınır. Doğru parola ile eşlendiği vakit döngüden çıkılır ve ekrana yazdırılır.
