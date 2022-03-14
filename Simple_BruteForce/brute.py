@@ -1,6 +1,6 @@
 import itertools
-import time
 import os
+import time
 
 PURPLE = '\033[95m'
 CYAN = '\033[96m'
@@ -24,11 +24,13 @@ print(f"""{PURPLE}{BOLD}
 (_/ (                   (_/                    
                 coding Helmsys
 \n""")
+# char_list = list(string.printable)
 password = list(str(input(f"{GREEN}[+] Please Create Your Password In Here >>> {RED}")))
 def BruteForce():
     count = 0
-    print("Creating Wordlist...")
     A = time.time()
+    print("Creating Wordlist...\n")
+    time.sleep(0.001)
     with open("wordlist.txt","w",encoding="utf-8") as f:
         for i in itertools.product(password,repeat=len(password)):
             f.write(str(list(i))+"\n")
@@ -40,7 +42,7 @@ def BruteForce():
             print(f"""{RED}[{CYAN}+{CYAN}{RED}] Your Password is < {CYAN}{BOLD}{sj.replace("[","").replace("]","").replace("'","").replace(",","").replace(" ","")}{CYAN}{RED} >""")
             break
         else:
-            print(f"\t{GREEN}[-] Trying... {sj}")
+            print(f"\033[F\t{GREEN}[{RED}-{RED}{GREEN}] Trying... {sj}")
             count += 1
     os.remove("wordlist.txt")
     B = time.time()
