@@ -2,7 +2,7 @@
 
 ![gif](https://user-images.githubusercontent.com/84701901/158272110-15019e97-015d-448a-8f9b-9773d50a9ce9.gif)
 
-girilen parolanın karmaşıklığı ve uzunluğu ne kadar artarsa keyword listesinin boyutu ve oluşturulma süresi o kadar artar.
+Girilen parolanın karmaşıklığı ve uzunluğu ne kadar artarsa keyword listesinin boyutu ve oluşturulma süresi o kadar artar.
 
   • _`brute.py`'in bulunduğu konuma `wordlist.txt` adında metin belgesi oluşturulur._
 
