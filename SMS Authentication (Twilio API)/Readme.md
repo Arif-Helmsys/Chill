@@ -7,7 +7,7 @@
 You have to pay a certain fee to remove this restriction.**
 
 - The error you will get when you send an sms to a phone number other than your own phone will be:
-- Unable to create record: The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify  at _twilio.com/user/account/phone-numbers/verified_, or purchase a Twilio number to send messages to unverified numbers.
+  * Unable to create record: The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify  at _twilio.com/user/account/phone-numbers/verified_, or purchase a Twilio number to send messages to unverified numbers.
 
 - If the written code is correct, a new window appears. And since it checks this every second,
 a new window does not open when it is written incorrectly or incompletely.
